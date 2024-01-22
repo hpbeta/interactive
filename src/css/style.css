@@ -1,78 +1,122 @@
 body {
-    font-family: 'Overpass', sans-serif;
-    font-weight: 400;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: hsl(216, 12%, 8%);
-    color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  color: #ffffff;
 }
 
 .card {
-    background-color: hsl(213, 19%, 18%);
-    width: 350px;
-    padding: 20px;
-    border-radius: 20px;
+  background-color:hsl(213, 19%, 18%);
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
 }
 
 .card img {
-    display: flex;
-    width: 20px;
-
+  display: flex;
+  width: 20px;
 }
 
 .card .img {
-    display: flex;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    background-color: hsl(216, 12%, 54%);
-    border-radius: 50%;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  background-color: hsl(216, 12%, 54%);
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
-.card .title{
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 15px;
+.card .title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
-.card p{
-    
-    font-size: 14px;
-    line-height: 23px;
-    color: hsl(216, 12%, 54%);
+.card p {
+  font-size: 14px;
+  line-height: 23px;
+  color: hsl(216, 12%, 54%);
 }
-.card ul{
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-
-
+.card ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
 }
-.card ul li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  hsl(216, 12%, 54%);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+.card ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  hsl(216, 12%, 8%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
-.card .btn{
+.card ul li:hover{
     background-color: hsl(25, 97%, 53%);
-    padding: 12px 120px;
-    border-radius: 20px;
-    border: none;
-    color: #ffffff;
-    font-weight: 700;
-    margin-left: 9px;
+} 
+
+.card ul li:focus{
+    background-color:hsl(217, 12%, 63%);
 }
-.card .btn:hover{
-    cursor: pointer;
-    background-color: #ffffff;
-    color: hsl(25, 97%, 53%);
+
+.card .btn {
+  background-color: hsl(25, 97%, 53%);
+  padding: 12px 120px;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  margin-left: 9px;
+}
+.card .btn:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: hsl(25, 97%, 53%);
+}
+
+.card .thank-you {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.thank-you img {
+  width: 150px;
+}
+
+.thank-you span {
+  background-color: hsl(217, 12%, 63%);
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-weight: 13px;
+  color: hsl(25, 97%, 53%);
+  margin: 10px 0 20px;
+}
+
+.card .thank-you.ativo {
+  opacity: 1;
+  visibility: visible;
 }

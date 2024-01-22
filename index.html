@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -13,20 +13,36 @@
 </head>
 <body>
   <main class="container">
+
     <div class="card">
+
       <div class="img"><img src="src/images/icon-star.svg" alt="star"></div>
+
       <h1 class="title">How did we do?</h1>
+
       <p>Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!</p>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+
+        <ul class="item">
+          <li class="itens"tabIndex="0">1</li>
+          <li class="itens"tabIndex="0">2</li>
+          <li class="itens"tabIndex="0">3</li>
+          <li class="itens"tabIndex="0">4</li>
+          <li class="itens"tabIndex="0">5</li>
         </ul>
+
         <button class="btn">Submit</button>
+        
+        <div class="thank-you">
+          <img class="image-thank-you" src="./src/images/illustration-thank-you.svg" alt="image thank you">
+          <span class="selected">You selected <span id="rating"></span> out of 5</span>
+          <h2 class="thanks">Thank You!</h2>
+          <p class="paragraph">We appreciate you taking the time to give a rating if you ever need more support, don't hesitate to get in touch!</p>
+        </div>
+        
     </div>
   </main>  
+
+  <script src="./src/js/index.js"></script>
 </body>
 </html>
